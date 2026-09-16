@@ -1,1 +1,34 @@
-<h1>rclone-oauth</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - rclone-oauth</title>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 2rem; color: #333; }
+        h1, h2 { color: #111; }
+        .links { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #ccc; font-size: 0.9em; }
+        .links a { margin-right: 15px; color: #0366d6; text-decoration: none; }
+        .links a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>rclone-oauth</h1>
+    
+    <h2>What is the purpose of this application?</h2>
+    <p><strong>rclone-oauth</strong> is a lightweight helper application designed to facilitate secure OAuth 2.0 authentication for the <a href="https://rclone.org/" target="_blank">rclone</a> command-line tool.</p>
+    
+    <p>When you configure a new cloud storage provider (such as Google Drive, Microsoft OneDrive, or Dropbox) in rclone, the provider requires a secure web page to return your authorization token. Because rclone typically runs in a terminal or on a headless server, it cannot natively display this web callback.</p>
+    
+    <p>This application simply acts as a secure bridge. It receives the authorization code from your cloud provider and immediately redirects it back to your local rclone setup to complete the connection.</p>
+
+    <h2>Security & Privacy</h2>
+    <p>This page is hosted entirely via GitHub Pages as static content. <strong>No personal data, files, or authentication tokens are ever collected, processed, or stored on our servers.</strong> The authentication flow happens directly between your browser, the cloud provider, and your local machine.</p>
+
+    <div class="links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="https://github.com/earache/rclone-oauth" target="_blank">View on GitHub</a>
+    </div>
+</body>
+</html>
